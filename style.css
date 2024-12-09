@@ -1,0 +1,111 @@
+.about-section {
+    background-color: #f9f9f9;
+    color: orange;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .about-img-container {
+    text-align: center;
+  }
+  
+  .about-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 1s ease;
+  }
+  
+  .about-text {
+    font-size: 1.2rem;
+    color: #333;
+    opacity: 0; /* Initial state is hidden */
+    transition: opacity 1.5s ease; /* Transition for opacity */
+  }
+  
+  .text-appear {
+    opacity: 1 !important; /* Ensures that opacity is set to 1 after the animation */
+  }
+  
+  
+  .about-text-content {
+    margin-bottom: 20px;
+  }
+  
+  /* Hover effect on image */
+  .about-img-container:hover .about-img {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  
+ /* About Section */
+.about {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  .about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Author info container */
+  .author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Author Image */
+  #author-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #007bff;
+    transition: transform 0.3s ease;
+  }
+  
+  #author-img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Author info text */
+  .info {
+    max-width: 700px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .info p {
+    line-height: 1.8;
+  }
+  
+  .info strong {
+    color: #007bff;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .author {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #author-img {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .info {
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+  }
+  
